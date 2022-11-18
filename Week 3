@@ -1,0 +1,35 @@
+HTML Forms:
+- <form action> is the URL to send the form data to
+- <form method> is the type of HTTP request
+- <input> creates interactive controls; types of <input> eg. text, date, color, file, checkbox, radio, etc
+- <label> add captions to the form elements
+- validations inlcudes 'required', etc
+
+CSS Recap:
+- with descendant selectors, can go as many levels as you want (best to use at most 3)
+- grouping selectors can use {}, class method, or comma
+- CSS styles can be inherited from the parent elements
+- specifity determines how browsers decide which CSS rule takes precedence
+- cascade in CSS refers to how style rules are applied based on specifity & source order
+- !important keyword overrides source order & specifity
+
+Media Queries:
+- used to modify the CSS of a site depending on qualities such as viewport size or device type
+- @media, applies one or more CSS properties based on the result of a media query
+- min-width, if the minimum width of the viewport is at least the specific width or wider, then the media query is true
+- max-width, if the maximum width of the viewport is at no more than the specified width, or it’s narrower then the media query is true
+- media features are used to test a specific feature of the device
+
+Positioning:
+- CSS position property lets you alter the positioning scheme of a particular element
+- relative position, moves elements around relative to where they would appear on the page
+- absolute position, offset is relative to the entire browser window instead of the original position of the element
+- fixed position, very similar to absolute except the coordinate system is relative to the entire browser window, fixed elements don't scroll with the 
+rest of the page, commonly known as sticky elements
+- z-index, lets you control the depth of elements on the page, negative z-index go further into the page, posititive z-index comes out of the page, works only on elements with a 
+position property set to absolute, fixed, or relative
+
+Flexbox:
+- the flexbox container is the parent of the flex item
+- children of the flexbox container can be laid out in horizontal or vertical easily and flex their size when the content grows or shrink accordingly
+- can adapt to layout to suit content
