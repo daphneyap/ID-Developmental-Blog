@@ -1,0 +1,38 @@
+Responsive Images:
+- auto-resize based on screen size
+- better performance
+- provide better design control depending on device
+- by setting a relative unit, we make our images fluid and they will resize accordingly
+- scale up and down, 
+.responsive-img {
+width: 100%;
+height: auto;
+}
+- .responsive-img-max {
+max-width: 100%
+height: auto;
+}
+- the max-width property sets a maximum width for an element, which does not allow the width of that element to be larger than its max-width value (but it can be smaller)
+- images to scale never larger than original size,
+.responsive-img-max-fixed-width {
+max-width: 100%;
+width: 400px;
+height: auto;
+}
+- for different resolutions, use srcset
+img {
+width: 400px;
+}
+<img
+srcset="
+https://picsum.photos/400/400.jpg,
+https://picsum.photos/600/600 1.5x,
+https://picsum.photos/800/800 2x"
+src="https://picsum.photos/400/400.jpg"
+alt="Elva dressed as a fairy"
+/>
+- to fit images to a box, auto fit to box
+.responsive-img-cover{
+background-image: url(...);
+background-size: cover;
+}
